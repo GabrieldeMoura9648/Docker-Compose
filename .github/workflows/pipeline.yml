@@ -39,8 +39,8 @@ jobs:
     needs: build-publish
     runs-on: ubuntu-latest
     env:
-      DB_PASSWORD: ${{ secrets.TEST_DB_PASSWORD }}
-      DB_ROOT_PASSWORD: ${{ secrets.TEST_DB_ROOT_PASSWORD }}
+      DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+      DB_ROOT_PASSWORD: ${{ secrets.DB_ROOT_PASSWORD }}
 
     steps:
       - name: Checkout
