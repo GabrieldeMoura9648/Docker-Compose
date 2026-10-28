@@ -21,7 +21,7 @@ def get_connection():
 
 
 def initialize_database():
-    # O MariaDB pode demorar alguns segundos para inicializar na primeira subida.
+    # O DB pode demorar alguns segundos para inicializar na primeira subida.
     last_error = None
     for _ in range(30):
         try:
